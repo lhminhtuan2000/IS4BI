@@ -1,0 +1,14 @@
+﻿/*
+Thống kê tổng số người tử vong 
+theo Giới Tính và 
+Nhóm Tuổi 
+theo các năm.
+*/
+select 
+non empty [Dim Date].[Hierarchy].[Year]  on  columns, 
+non empty crossjoin ([Dim Gender].[Hierarchy].[Gender],
+					[Dim Age Group].[Hierarchy].[Age Group]) 
+					 having [Measures].[Total Fatal Cases] > 0 on rows
+from [olap]
+where 
+	[Measures].[Total Fatal Cases]

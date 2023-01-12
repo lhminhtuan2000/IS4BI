@@ -1,0 +1,10 @@
+﻿/*
+Thống kê Số ca nhiễm, số ca tử vong, số ca phục hồi của dịch Covid-19 
+theo từng loại phơi nhiễm
+*/
+select 
+non empty {[Measures].[Total Cases], 
+			[Measures].[Total Fatal Cases], 
+			[Measures].[Total Resolved Cases]} on columns, 
+non empty [Dim Exposure].[Exposure].members on rows
+from [olap]

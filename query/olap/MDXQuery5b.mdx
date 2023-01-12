@@ -1,0 +1,6 @@
+with member [Measures].[Numbers have vaccines] as MAX([Measures].[At Least One Dose Cumulative])
+
+select 
+non empty [Dim Date].[Hierarchy].[Year] on columns, 
+non empty [Measures].[Numbers have vaccines] on rows
+from [olap]

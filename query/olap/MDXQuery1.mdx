@@ -1,0 +1,12 @@
+﻿/*
+Thống kê Số ca nhiễm, số ca tử vong, số ca phục hồi của dịch Covid-19 
+theo từng PHU 
+trong từng năm.
+*/
+select 
+non empty {[Measures].[Total Cases],
+			[Measures].[Total Fatal Cases],
+			[Measures].[Total Resolved Cases]} on columns, 
+non empty crossjoin([Dim Phu].[Hierarchy].[Phu Name],
+			[Dim Date].[Hierarchy].[Year]) on rows
+from [olap]

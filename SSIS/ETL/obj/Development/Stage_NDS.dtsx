@@ -1,0 +1,1533 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/26/2022 6:29:49 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-NBFA5B0"
+  DTS:CreatorName="DESKTOP-NBFA5B0\pmtri"
+  DTS:DTSID="{6D005B86-CE21-4F96-9DA8-B40F20FF93AE}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.845.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{FD3060A4-819A-46B7-A45E-47BFAAF496A7}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Case Report Connection]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{8CA80B16-C4B3-42D4-82EF-EC9C29191DE8}"
+      DTS:ObjectName="Case Report Connection">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\pmtri\Documents\is for bi\IS4BI_DATH\data\Cases Report.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Outcome"
+              DTS:DTSID="{28BC7B64-DF70-4F97-A973-C9081A013A72}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Age"
+              DTS:DTSID="{7B92FAC9-784C-4EB5-BA90-C3828FBAFE34}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{4356D5AA-9DE3-4159-94A8-C5968B8D13B0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Reporting PHU"
+              DTS:DTSID="{7876E22F-6618-4EEF-B825-F133A840844A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SpecimenDate"
+              DTS:DTSID="{ED946876-A63C-4B14-A8B4-01AFA08EB353}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CaseReported Date"
+              DTS:DTSID="{013B9545-E893-4116-B79C-4C2B50EE4103}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHUCity"
+              DTS:DTSID="{F0118158-4374-49FD-A0FB-3454F6BB95BF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TestReported Date"
+              DTS:DTSID="{9A8AF6E5-7601-40A0-99B0-84CD6920D511}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CaseAcquisition info"
+              DTS:DTSID="{6F61713B-D872-4BBE-A1D3-8FA167124734}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AccurateEpisode Dt"
+              DTS:DTSID="{C00E3E89-C8D4-46A9-8048-5F673C67911F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Address"
+              DTS:DTSID="{384CC6BF-EC72-4BE3-B714-104E4E4EF5C7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Website"
+              DTS:DTSID="{30A27B74-E924-4C6D-B80D-BA2A3D96FFF3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OutbreakRelated"
+              DTS:DTSID="{E6AB2F1A-2E6A-4E9E-8F37-4F754885A833}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Latitude"
+              DTS:DTSID="{5493C88E-209B-4C33-8CEC-64FE1BBF2A76}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Longitude"
+              DTS:DTSID="{D70046CA-E49E-47E2-9456-18F5CF15DBC8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Postal Code"
+              DTS:DTSID="{75DAA021-5725-4395-92CB-AE7E72EBB86A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-NBFA5B0.covid_nds]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{829E1F58-01D4-4462-B6FB-2BC4742B7D38}"
+      DTS:ObjectName="DESKTOP-NBFA5B0.covid_nds">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-NBFA5B0;Initial Catalog=covid_nds;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{829E1F58-01D4-4462-B6FB-2BC4742B7D38}DESKTOP-NBFA5B0.covid_nds;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-NBFA5B0.covid_stage]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{14A35AA7-C6AE-452D-AE06-06FDDEAD0D1F}"
+      DTS:ObjectName="DESKTOP-NBFA5B0.covid_stage">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-NBFA5B0;Initial Catalog=covid_stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{14A35AA7-C6AE-452D-AE06-06FDDEAD0D1F}DESKTOP-NBFA5B0.covid_stage;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{CEF4BDBE-E705-4B5B-8EBD-24FD7A46BEFC}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\pmtri\Documents\is for bi\IS4BI_DATH\data\Cases Report.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Outcome"
+              DTS:DTSID="{9A047C25-9626-4F53-B9C9-18501528DF55}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Age"
+              DTS:DTSID="{F8807BDA-1472-4AAC-9F8E-93EE314DF866}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{6E503FDB-5072-44E9-9B7A-394807D0EB40}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Reporting PHU"
+              DTS:DTSID="{E1F6E25F-5768-4369-B8AA-F069AF14A710}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SpecimenDate"
+              DTS:DTSID="{29CD20C3-DFDD-4CBB-8D0F-A8B4AE16E8D8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CaseReported Date"
+              DTS:DTSID="{D04C43DF-581C-43B3-84C2-F2FF5278C8BE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHUCity"
+              DTS:DTSID="{A9CC795D-B752-45A2-BDB8-654AEC205BB4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TestReported Date"
+              DTS:DTSID="{17835078-4791-4DF4-AF59-030C1758CF27}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CaseAcquisition info"
+              DTS:DTSID="{8D8D4B7C-275A-48DA-AE59-E082E914FD5E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AccurateEpisode Dt"
+              DTS:DTSID="{640F248D-D649-4F07-945D-19333E02B369}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Address"
+              DTS:DTSID="{48F74F82-6D69-4412-AEC3-BA150443D6F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Website"
+              DTS:DTSID="{BD1D9214-0BDF-46DC-B563-45A7B8D4B9CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OutbreakRelated"
+              DTS:DTSID="{9000B8E5-C3B2-4EB8-9DD4-A9735E25B4F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Latitude"
+              DTS:DTSID="{BBED6AB4-23C7-46CC-A1F9-D5107C7BDE7B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Longitude"
+              DTS:DTSID="{E6CC2831-E7BB-426A-B545-5DFA7F9E32CB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Postal Code"
+              DTS:DTSID="{4D5C1BAB-B499-42B3-8FEA-725B7522F0FC}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{35D69E60-BE74-49F9-A4AE-58CA0B5530A8}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\pmtri\Documents\is for bi\IS4BI_DATH\data\Cases Report.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Outcome"
+              DTS:DTSID="{2C542C35-173D-41D7-A9C1-75D52D302AA3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Age"
+              DTS:DTSID="{21C74326-DB22-4C5E-9F5D-25FA5CA987BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{A635E089-5B62-493D-B28D-6417507BA731}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Reporting PHU"
+              DTS:DTSID="{21235FEA-E1D7-41D4-9E52-AAFDA2A58A12}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SpecimenDate"
+              DTS:DTSID="{14B5E090-1E50-4E6B-8489-08A9F6CBA950}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CaseReported Date"
+              DTS:DTSID="{E9253D0A-7A9B-4B96-A531-BD38B647F257}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHUCity"
+              DTS:DTSID="{D376D17A-3003-43C4-9BDE-1C4C2500207E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TestReported Date"
+              DTS:DTSID="{8DE366E5-8174-4B26-AFB5-60A29D2F6871}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CaseAcquisition info"
+              DTS:DTSID="{B4184279-F50F-49FC-8D4B-648FB461BF3E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AccurateEpisode Dt"
+              DTS:DTSID="{80E5BE2F-7C63-4492-B5CE-4A397FD39B97}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Address"
+              DTS:DTSID="{C8C1B0A9-D95C-41CA-A1DA-24D756C09A3A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Website"
+              DTS:DTSID="{8EB32D58-63D1-4B70-A93F-467653ACF8A8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OutbreakRelated"
+              DTS:DTSID="{52CDEB0B-764A-45EE-A32A-DA12B59A9479}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Latitude"
+              DTS:DTSID="{80E8BC9D-AD21-43E5-B48E-FCC95C07C334}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Longitude"
+              DTS:DTSID="{AD8EF44D-C40D-4460-8B38-2ADDFEECA8FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHU Postal Code"
+              DTS:DTSID="{2546DC55-5F82-48A5-92CF-3F5A1365390F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\cases_report"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{36FFB94B-AEAB-4BBF-A367-C8AC308695F8}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="cases_report"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\cases_report\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\cases_report\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\cases_report\Derived Column.Inputs[Derived Column Input].Columns[Reporting PHU]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Reporting PHU"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[Reporting PHU]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACE]([REPLACE]([REPLACE]([REPLACE](#{Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[Reporting PHU]},"Health Unit","Public Health")," &amp;",",")," and",",")," District","")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACE(REPLACE(REPLACE(REPLACE([Reporting PHU],"Health Unit","Public Health")," &amp;",",")," and",",")," District","")</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\cases_report\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\cases_report\Derived Column.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\cases_report\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\cases_report\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\cases_report\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\cases_report\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\cases_report\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\cases_report\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\cases_report\Import Cases Report From File"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Import Cases Report From File"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\cases_report\Import Cases Report From File.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[Outcome]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[Outcome]"
+                      length="255"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[Outcome]"
+                      name="Outcome"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[Age]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[Age]"
+                      length="255"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[Age]"
+                      name="Age"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[Gender]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      length="255"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[Reporting PHU]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[Reporting PHU]"
+                      length="255"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[Reporting PHU]"
+                      name="Reporting PHU"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[SpecimenDate]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[SpecimenDate]"
+                      length="255"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[SpecimenDate]"
+                      name="SpecimenDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[CaseReported Date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[CaseReported Date]"
+                      length="255"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[CaseReported Date]"
+                      name="CaseReported Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHUCity]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[PHUCity]"
+                      length="255"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHUCity]"
+                      name="PHUCity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[TestReported Date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[TestReported Date]"
+                      length="255"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[TestReported Date]"
+                      name="TestReported Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[CaseAcquisition info]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[CaseAcquisition info]"
+                      length="255"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[CaseAcquisition info]"
+                      name="CaseAcquisition info"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[AccurateEpisode Dt]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[AccurateEpisode Dt]"
+                      length="255"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[AccurateEpisode Dt]"
+                      name="AccurateEpisode Dt"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Address]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[PHU Address]"
+                      length="255"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Address]"
+                      name="PHU Address"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Website]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[PHU Website]"
+                      length="255"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Website]"
+                      name="PHU Website"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[OutbreakRelated]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[OutbreakRelated]"
+                      length="255"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[OutbreakRelated]"
+                      name="OutbreakRelated"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Latitude]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[PHU Latitude]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Latitude]"
+                      name="PHU Latitude"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Longitude]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[PHU Longitude]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Longitude]"
+                      name="PHU Longitude"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Postal Code]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[PHU Postal Code]"
+                      length="255"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Postal Code]"
+                      name="PHU Postal Code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[Outcome]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Outcome" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[Age]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Age" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[Reporting PHU]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Reporting PHU" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[SpecimenDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SpecimenDate" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[CaseReported Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CaseReported Date" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[PHUCity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PHUCity" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[TestReported Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TestReported Date" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[CaseAcquisition info]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CaseAcquisition info" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[AccurateEpisode Dt]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="AccurateEpisode Dt" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[PHU Address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PHU Address" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[PHU Website]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PHU Website" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[OutbreakRelated]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="OutbreakRelated" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[PHU Latitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PHU Latitude" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[PHU Longitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PHU Longitude" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].ExternalColumns[PHU Postal Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PHU Postal Code" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\cases_report\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[cases_report]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\cases_report\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-NBFA5B0.covid_stage]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-NBFA5B0.covid_stage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Outcome]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Outcome"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[outcome]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[Outcome]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Age]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Age"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[age]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[Age]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Gender]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[gender]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Reporting PHU]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Reporting PHU"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[reporting_phu]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[Reporting PHU]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SpecimenDate]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="SpecimenDate"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[specimen_date]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[SpecimenDate]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CaseReported Date]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CaseReported Date"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[casereported_date]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[CaseReported Date]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TestReported Date]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="TestReported Date"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[test_reported_date]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[TestReported Date]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AccurateEpisode Dt]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="AccurateEpisode Dt"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[accurate_episode_dt]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[AccurateEpisode Dt]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CaseAcquisition info]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CaseAcquisition info"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[case_acquisition_info]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[CaseAcquisition info]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PHUCity]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="PHUCity"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[phu_city]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHUCity]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PHU Address]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="PHU Address"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[phu_address]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Address]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PHU Website]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="PHU Website"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[phu_website]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Website]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[OutbreakRelated]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="OutbreakRelated"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[outbreak_related]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[OutbreakRelated]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PHU Latitude]"
+                      cachedDataType="r4"
+                      cachedName="PHU Latitude"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[phu_latitude]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Latitude]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PHU Longitude]"
+                      cachedDataType="r4"
+                      cachedName="PHU Longitude"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[phu_longitude]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Longitude]" />
+                    <inputColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PHU Postal Code]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="PHU Postal Code"
+                      externalMetadataColumnId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[phu_postal_code]"
+                      lineageId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output].Columns[PHU Postal Code]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[outcome]"
+                      dataType="wstr"
+                      length="255"
+                      name="outcome" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[age]"
+                      dataType="wstr"
+                      length="255"
+                      name="age" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[gender]"
+                      dataType="wstr"
+                      length="255"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[reporting_phu]"
+                      dataType="wstr"
+                      length="255"
+                      name="reporting_phu" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[specimen_date]"
+                      dataType="dbDate"
+                      name="specimen_date" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[casereported_date]"
+                      dataType="dbDate"
+                      name="casereported_date" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[test_reported_date]"
+                      dataType="dbDate"
+                      name="test_reported_date" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[accurate_episode_dt]"
+                      dataType="dbDate"
+                      name="accurate_episode_dt" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[case_acquisition_info]"
+                      dataType="wstr"
+                      length="255"
+                      name="case_acquisition_info" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[phu_city]"
+                      dataType="wstr"
+                      length="255"
+                      name="phu_city" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[phu_address]"
+                      dataType="wstr"
+                      length="255"
+                      name="phu_address" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[phu_website]"
+                      dataType="wstr"
+                      length="255"
+                      name="phu_website" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[outbreak_related]"
+                      dataType="wstr"
+                      length="255"
+                      name="outbreak_related" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[phu_latitude]"
+                      dataType="r8"
+                      name="phu_latitude" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[phu_longitude]"
+                      dataType="r8"
+                      name="phu_longitude" />
+                    <externalMetadataColumn
+                      refId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[phu_postal_code]"
+                      dataType="wstr"
+                      length="255"
+                      name="phu_postal_code" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\cases_report\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\cases_report\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\cases_report\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\cases_report\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\cases_report\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\cases_report.Paths[Derived Column Output]"
+              endId="Package\cases_report\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\cases_report\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\cases_report.Paths[Flat File Source Output]"
+              endId="Package\cases_report\Derived Column.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\cases_report\Import Cases Report From File.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="139,42"
+          Id="Package\cases_report"
+          TopLeft="395,90" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\cases_report">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="223,42"
+          Id="Package\cases_report\Import Cases Report From File"
+          TopLeft="371,61" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\cases_report\Derived Column"
+          TopLeft="417,202" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\cases_report\OLE DB Destination"
+          TopLeft="403,312" />
+        <EdgeLayout
+          Id="Package\cases_report.Paths[Derived Column Output]"
+          TopLeft="491.25,244">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,68"
+              Start="0,0"
+              End="0,60.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\cases_report.Paths[Flat File Source Output]"
+          TopLeft="482.5,103">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="11.5,99"
+              Start="0,0"
+              End="11.5,91.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.5"
+                    Point2="0,49.5"
+                    Point3="4,49.5" />
+                  <mssgle:LineSegment
+                    End="7.5,49.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7.5,49.5"
+                    Point2="11.5,49.5"
+                    Point3="11.5,53.5" />
+                  <mssgle:LineSegment
+                    End="11.5,91.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\cases_report\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
