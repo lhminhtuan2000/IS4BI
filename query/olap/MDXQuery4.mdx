@@ -1,0 +1,22 @@
+﻿/*
+Thống kê số ca nhiễm, tử vong 
+theo Mức Độ Nghiêm Trọng 
+theo Ngày Trong sTháng của các năm.
+*/
+WITH MEMBER MEASURES.[Serious_Level] AS
+IIF( [Measures].[Total Cases] < 10, 1, 
+IIF( [Measures].[Total Cases] < 50, 2, 
+IIF( [Measures].[Total Cases] < 100, 3, 
+IIF( [Measures].[Total Cases] < 500, 4, 
+IIF( [Measures].[Total Cases] < 1000, 5,  6 )))))
+
+select 
+non empty filter({[MEASURES].[Serious_Level],
+					[Measures].[Total Cases],
+					[Measures].[Total Fatal Cases]},
+				[Measures].[Total Cases] > 0 
+					and [Measures].[Total Fatal Cases] > 0) on columns, 
+non empty crossjoin([Dim Date].[Hierarchy].[Year],
+					[Dim Date].[Month In Year].[Month In Year],
+					[Dim Date].[Day In Month].[Day In Month]) on rows
+from [olap]

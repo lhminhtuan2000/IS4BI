@@ -1,0 +1,19 @@
+﻿/*
+Thống kê số ca nhiễm, tử vong
+theo Mức Độ Nghiêm Trọng, 
+khu vực (PHU_Group, City)
+*/
+WITH MEMBER MEASURES.[Serious_Level] AS
+IIF( [Measures].[Total Cases] < 10, 1, 
+IIF( [Measures].[Total Cases] < 50, 2, 
+IIF( [Measures].[Total Cases] < 100, 3, 
+IIF( [Measures].[Total Cases] < 500, 4, 
+IIF( [Measures].[Total Cases] < 1000, 5,  6 )))))
+
+select 
+non empty {[MEASURES].[Serious_Level],
+					[Measures].[Total Cases],
+					[Measures].[Total Fatal Cases]} on columns, 
+non empty crossjoin([Dim Phu].[Hierarchy].[Group Name],
+					[Dim Phu].[City Name].[City Name]) on rows
+from [olap]
