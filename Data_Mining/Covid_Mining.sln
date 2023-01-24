@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Covid_Mining", "Covid_Mining\Covid_Mining.dwproj", "{B061BEBC-36CC-4013-A1F7-CB12EF2BECE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B061BEBC-36CC-4013-A1F7-CB12EF2BECE8}.Development|Default.ActiveCfg = Development
+		{B061BEBC-36CC-4013-A1F7-CB12EF2BECE8}.Development|Default.Build.0 = Development
+		{B061BEBC-36CC-4013-A1F7-CB12EF2BECE8}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7CC7178-3945-45B6-B704-9F25581244BC}
+	EndGlobalSection
+EndGlobal
